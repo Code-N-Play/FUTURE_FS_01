@@ -1,0 +1,461 @@
+<html>
+
+<head>
+    <title>Neeraj</title>
+
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+      
+        body {
+            width: 100%;
+            min-height: 100%;
+            font-family: "poppins";
+            background:
+                linear-gradient(180deg, #000, #010f0b),
+                url("https://www.transparenttextures.com/patterns/noise.png");
+            background-blend-mode: overlay;
+            color: white;
+        }
+
+        .navbar-brand {
+            font-size: 30px;
+            color: rgb(67, 163, 104);
+            font-weight: bold;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        .profileimage {
+
+            border-radius: 5%;
+            margin-right: 30px;
+
+
+        }
+
+        i {
+            color: azure;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .bottons {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .btn01 {
+            text-align: center;
+            text-decoration: none;
+            padding: 4px;
+            background-color: greenyellow;
+            color: rgb(2, 2, 2);
+            border: none;
+            border-radius: 30px;
+            width: 120px;
+            height: 40px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .btn01:hover {
+            background-color: red;
+            color: white;
+            transform: translateY();
+            box-shadow: 0 0 15px rgba(248, 3, 3, 1);
+        }
+
+        .btn02 i {
+
+            font-size: 35px;
+            color: greenyellow;
+            border-radius: 100%;
+        }
+
+        .btn02:hover i {
+            color: red;
+            transform: translateY();
+            box-shadow: 0 0 15px rgba(248, 3, 3, 1);
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 50px;
+
+        }
+
+        .card {
+            flex: 1;
+            border-color: greenyellow;
+            border-radius: 25px;
+        }
+
+        .card-title i {
+
+            color: white;
+        }
+
+        .card-body {
+
+            background-color: rgb(2, 22, 2);
+            border: none;
+            height: 250px;
+
+        }
+
+        .cards i {
+            font-weight: 500;
+            font-size: 35px;
+            color: greenyellow;
+            margin-left: 25px;
+            margin-top: 15px;
+
+        }
+
+        .card-head {
+            color: white;
+
+        }
+
+        .card-text {
+            color: rgb(96, 250, 96)
+        }
+
+        .card:hover {
+            transform: translateY(-18px);
+            box-shadow: 0 0 25px rgb(47, 248, 47);
+        }
+
+        .About {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 100px;
+        }
+
+        .Aboutimage {
+            border-radius: 15%;
+            transform: translateY();
+            box-shadow: 0 0 35px rgb(47, 248, 47);
+        }
+
+        .Download {
+            margin-left: 53%;
+            border: none;
+            height: 40px;
+            width: 200px;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 20px;
+            color: black;
+            background-color: greenyellow;
+        }
+
+        .Download i {
+            margin-right: 5px;
+            color: black;
+            font-size: 20Px;
+            font-weight: 700px;
+        }
+
+        .Download:hover {
+            background-color: red;
+            color: white;
+            transform: translateY();
+            box-shadow: 0 0 20px red;
+        }
+
+        .Download:hover i {
+            color: white;
+        }
+
+        .form {
+            border: #000;
+            background-color: #000;
+            width: 650px;
+            align-content: center;
+
+        }
+
+        .form-body {
+            border: #000;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            box-shadow: 0 0 25px rgb(47, 248, 47);
+
+        }
+
+        input {
+            background-color: #141f18;
+            border: none;
+            height: 35px;
+            color: aquamarine;
+            border-radius: 5px;
+        }
+        input:focus {
+            background-color: #141f18;
+            color: aquamarine;
+            border-radius: 5px;
+            border: none;
+        }
+        textarea{
+            background-color: #141f18;
+            color: aquamarine;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .send {
+            color: black;
+            background-color: aqua;
+            border: none;
+            height: 40px;
+            width: 200px;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 20px;
+
+        }
+
+        .reset {
+            background-color: rgb(255, 80, 80);
+            border: none;
+            height: 40px;
+            width: 200px;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 20px;
+            color: black;
+        }
+
+        .para {
+            text-align: center;
+        }
+
+        .footer-full {
+            background: #000;
+            padding: 25px 0;
+            text-align: center;
+
+
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+        }
+
+        .footer-full p {
+            margin: 0;
+            color: #ccc;
+        }
+
+        .footer-full span {
+            color: rgb(96, 250, 96);
+            font-weight: 500;
+        }
+    </style>
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+
+    <!-- NavBar -->
+    <nav class="navbar sticky-top navbar-expand-lg bg-dark " data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <i class="fa-solid fa-cat"></i> Neeraj</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="education_page.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+        <br><br><br><br><br>
+
+        <div class="hero">
+            <div class="herotext">
+                <p>Hello</p>
+                <h1> I Am<a style="color: rgb(96, 250, 96);"> Neeraj</a> </h1>
+                <h2>Aspiring Full stack developer</h2>
+                <br>
+                <p>B.tech Computer science & Engineering </p>
+                <p style="color: rgb(96, 250, 96);">(Artificial Inteligence)</p>
+                <br><br>
+                <div class="bottons">
+                    <a href="projects.html" class="btn01">Projects</a>
+                    <!-- <button class="btn01" type="button" onclick="proects.html" >Projects</button> -->
+                    <a href="https://github.com/Code-N-Play" class="btn02"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/neeraj-kumar-6406b7332" class="btn02"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="btn02"><i class="fa-brands fa-youtube"></i></i></a>
+                </div>
+
+            </div>
+            <img src="imges/picture0.png" alt="me" class="profileimage" width="245" height="385">
+        </div>
+
+        <br><br><br><br>
+
+        <section class="cards" style="margin-top: 40px;">
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="hgi hgi-stroke hgi-web-design-02"></i></h5><br>
+                    <h4 class="card-head">Web Development</h4><br>
+                    <p class="card-text">Building clean and responsive websites using HTML, CSS, Bootstrap</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"> <i class="hgi hgi-stroke hgi-source-code-square"></i></h5><br>
+                    <h4 class="card-head">Learning Full Stack</h4><br>
+                    <p class="card-text">Currenty learning Javascript and backend fundamentals </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="hgi hgi-stroke hgi-artificial-intelligence-04"></i></h5><br>
+                    <h4 class="card-head">AI Enthusiast</h4><br>
+                    <p class="card-text">B.Tech CSE (AI) student exploring Artificial Intelligence </p>
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br>
+
+        <div>
+            <h1>About Me </h1>
+            <br><br>
+            <div class="About">
+
+                <img src="imges/About.png" class="Aboutimage" height="325px" width="500px ">
+
+                <div>
+                    <p>I am Neeraj , a B.Tech Computer Science & Engineering student specializing in Artificial
+                        Intelligence. I am an aspiring full stack developer with a strong interest in building clean,
+                        responsive, and user-friendly web applications.</p><br>
+                    <p>I enjoy working with HTML, CSS, Bootstrap, and JavaScript, and I am currently learning backend
+                        fundamentals to become a complete full stack developer. I am passionate about learning new
+                        technologies, improving my skills through projects, and applying my knowledge to real-world
+                        problems.</p><br>
+                    <p>I believe in continuous learning and aim to grow as a developer by building meaningful projects
+                        and gaining industry experience.</p>
+                </div>
+            </div>
+            <br>
+            <button class="Download"> <i class="hgi hgi-stroke hgi-download-04"></i> Download CV </button>
+        </div>
+
+        <br><br><br>
+
+        <div>
+            <h1>Contact Me </h1>
+            <br>
+
+            <p class="para">Have questions, feedback, or just want to say hello? Reach out — we're always happy to
+                connect.</p>
+            <br><br>
+
+            <section class="form" style="margin-left:250px ;">
+                <div class="form-body">
+                    <form>
+                        <label style="margin-bottom: 15px;">User Name</label><label
+                            style="margin-left: 40%;">E-mail</label><br>
+                        <input type="text" placeholder="Name" required class="form-item" maxlength="30">
+                        <input type="email" placeholder="name@gmail.com" required class="form-item" maxlength="30"
+                            style="margin-left: 110px;">
+                        <br><br>
+                        <label style="margin-bottom: 15px;">Subject</label><br>
+                        <input type="text" placeholder="Subject" required class="form-item" style="width: 100%;">
+                        <br><br>
+                        <label style="margin-bottom: 15px;">Message</label><br>
+                        <textarea placeholder="Your Message" required rows="4" style="width: 100%;"
+                            class="form-item"></textarea>
+                        <br><br><br>
+                        <button type="submit" class="Send">Send Message</button>
+                        <button type="reset" class="Reset" style="margin-left: 30%;">Reset</button>
+                    </form>
+                </div>
+            </section>
+
+            <br><br><br>
+
+
+
+        </div>
+
+        <footer class="footer-full">
+            <p style="font-size: 13px;">
+                © 2026 All Rights Reserved
+            </p>
+            <p style="font-size: 13px;">
+                Designed by <span>Code-N-Play</span> | Distributed by <span>Neeraj</span>
+            </p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

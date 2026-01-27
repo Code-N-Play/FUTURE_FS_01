@@ -1,0 +1,46 @@
+ .skill{
+    position: relative;
+    width: 150px;
+    text-align: center;
+    color: white;
+    
+ }
+  
+  svg{
+    transform: rotate(-90deg);
+  }
+  
+  circle{
+    fill: none;
+    stroke-width: 12;
+    stroke-linecap: round;
+  }
+  
+  .bg{
+    stroke: #222;
+  }
+  
+  .progress{
+    stroke: #00ff88;
+    stroke-dasharray: 408;
+    stroke-dashoffset: 408;
+    animation: load 1.5s ease forwards;
+  }
+  
+  @keyframes load{
+    to{
+      stroke-dashoffset: calc(408 - (408 * var(--percent)) / 100);
+    }
+  }
+  
+  .skill span{
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+  } 
+
+
+  
