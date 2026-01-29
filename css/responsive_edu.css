@@ -41,15 +41,34 @@
         width: 100%;
     }
     .cards{
-        flex-direction: column;
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+       
+        flex-wrap: wrap;
     }
     .certicard{
         width: 100%;
+        height: auto;
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+
     }
    .name{
        font-size: 20px;
+       text-align: center;
    }
    .mainbody{
        font-size: 8px;
+       line-height: 1;
+   }
+
+   .image{
+       width: 80%;
+       height: 200px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
    }
 }
