@@ -1,0 +1,44 @@
+@media screen and (max-width: 480px) {
+
+    .mai{
+        text-align: center;
+    }
+    h1{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    p{
+        font-size: 10px;
+    }
+    .mai_para{
+        text-align: center;
+    }
+    .maincard{
+        flex-direction: column;
+    }
+    .left_card{
+        width: 100%;
+    }
+    .left_para{
+        text-align: center;
+    }
+    .right_card{
+        width: 100%;
+    }
+    .last_btn{
+        flex-direction: row;
+    }
+    .send{
+        height: 25px;
+        width: 110px;
+        font-size: 13px;
+    }
+    .reset{
+        height: 25px;
+        width: 110px;
+        font-size: 13px;
+    }
+    .card_heading{
+        text-align: center;
+    }
+}

@@ -1,0 +1,55 @@
+@media screen and (max-width: 480px){
+    .mai{
+        text-align: center;
+    }
+    h1{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .Educard{
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+    .logo1 {
+        height: 135px;
+        width: 120px;
+        margin-left: -5px;
+    }
+    .logo2 {
+        height: 145px;
+        width: 155px;
+        margin-left: -5px;
+    }
+    .course{
+        font-size: 22px;
+    }
+    .institute{
+        font-size: 15px;
+    }
+    .edupara{
+        font-size: 12px;
+    }
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skill{
+        width: 45%;
+    }
+    .skill:last-child{
+        width: 100%;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .certicard{
+        width: 100%;
+    }
+   .name{
+       font-size: 20px;
+   }
+   .mainbody{
+       font-size: 8px;
+   }
+}

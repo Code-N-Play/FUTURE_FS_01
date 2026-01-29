@@ -19,9 +19,8 @@
 
     <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <style>
-      
         body {
             width: 100%;
             min-height: 100%;
@@ -66,6 +65,9 @@
         p {
             margin: 0;
         }
+        .branch{
+            margin-top: 35px;
+        }
 
         .bottons {
             display: flex;
@@ -78,7 +80,7 @@
             text-align: center;
             text-decoration: none;
             padding: 4px;
-            background-color: greenyellow;
+            background-color: rgb(96, 250, 96);
             color: rgb(2, 2, 2);
             border: none;
             border-radius: 30px;
@@ -98,7 +100,7 @@
         .btn02 i {
 
             font-size: 35px;
-            color: greenyellow;
+            color: rgb(96, 250, 96);
             border-radius: 100%;
         }
 
@@ -112,6 +114,7 @@
             display: flex;
             justify-content: space-evenly;
             gap: 50px;
+            flex-wrap: wrap;
 
         }
 
@@ -169,9 +172,16 @@
             transform: translateY();
             box-shadow: 0 0 35px rgb(47, 248, 47);
         }
+        .download_btn{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
 
         .Download {
-            margin-left: 53%;
+            align-items: center;
             border: none;
             height: 40px;
             width: 200px;
@@ -179,7 +189,7 @@
             font-weight: 600;
             border-radius: 20px;
             color: black;
-            background-color: greenyellow;
+            background-color: rgb(96, 250, 96);
         }
 
         .Download i {
@@ -201,17 +211,19 @@
         }
 
         .form {
-            border: #000;
-            background-color: #000;
-            width: 650px;
-            align-content: center;
-
+            margin-top: 30px;
+            height: 500px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .form-body {
             border: #000;
-            justify-content: center;
-            align-items: center;
+            background-color: #000;
+            width: 650px;
+            align-content: center;
             padding: 30px;
             box-shadow: 0 0 25px rgb(47, 248, 47);
 
@@ -224,17 +236,23 @@
             color: aquamarine;
             border-radius: 5px;
         }
+
         input:focus {
             background-color: #141f18;
             color: aquamarine;
             border-radius: 5px;
             border: none;
         }
-        textarea{
+
+        textarea {
             background-color: #141f18;
             color: aquamarine;
             border-radius: 5px;
             border: none;
+        }
+        .last_btn{
+            display: flex;
+
         }
 
         .send {
@@ -336,15 +354,16 @@
                 <p>Hello</p>
                 <h1> I Am<a style="color: rgb(96, 250, 96);"> Neeraj</a> </h1>
                 <h2>Aspiring Full stack developer</h2>
-                <br>
-                <p>B.tech Computer science & Engineering </p>
+                
+                <p class="branch">B.tech Computer science & Engineering </p>
                 <p style="color: rgb(96, 250, 96);">(Artificial Inteligence)</p>
                 <br><br>
                 <div class="bottons">
                     <a href="projects.html" class="btn01">Projects</a>
                     <!-- <button class="btn01" type="button" onclick="proects.html" >Projects</button> -->
                     <a href="https://github.com/Code-N-Play" class="btn02"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/neeraj-kumar-6406b7332" class="btn02"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/neeraj-kumar-6406b7332" class="btn02"><i
+                            class="fa-brands fa-linkedin"></i></a>
                     <a href="#" class="btn02"><i class="fa-brands fa-youtube"></i></i></a>
                 </div>
 
@@ -382,13 +401,13 @@
         <br><br><br><br>
 
         <div>
-            <h1>About Me </h1>
+            <h1 class="mai">About Me </h1>
             <br><br>
             <div class="About">
 
                 <img src="imges/About.png" class="Aboutimage" height="325px" width="500px ">
 
-                <div>
+                <div class="about_para">
                     <p>I am Neeraj , a B.Tech Computer Science & Engineering student specializing in Artificial
                         Intelligence. I am an aspiring full stack developer with a strong interest in building clean,
                         responsive, and user-friendly web applications.</p><br>
@@ -401,46 +420,49 @@
                 </div>
             </div>
             <br>
-            <button class="Download"> <i class="hgi hgi-stroke hgi-download-04"></i> Download CV </button>
+            <div class="download_btn">
+                <button class="Download"> <i class="hgi hgi-stroke hgi-download-04"></i> Download CV </button>
+            </div>
         </div>
 
         <br><br><br>
 
-        <div>
-            <h1>Contact Me </h1>
-            <br>
 
-            <p class="para">Have questions, feedback, or just want to say hello? Reach out — we're always happy to
-                connect.</p>
-            <br><br>
+        <h1 class="mai">Contact Me </h1>
+        <br>
 
-            <section class="form" style="margin-left:250px ;">
-                <div class="form-body">
-                    <form>
-                        <label style="margin-bottom: 15px;">User Name</label><label
-                            style="margin-left: 40%;">E-mail</label><br>
-                        <input type="text" placeholder="Name" required class="form-item" maxlength="30">
-                        <input type="email" placeholder="name@gmail.com" required class="form-item" maxlength="30"
-                            style="margin-left: 110px;">
-                        <br><br>
-                        <label style="margin-bottom: 15px;">Subject</label><br>
-                        <input type="text" placeholder="Subject" required class="form-item" style="width: 100%;">
-                        <br><br>
-                        <label style="margin-bottom: 15px;">Message</label><br>
-                        <textarea placeholder="Your Message" required rows="4" style="width: 100%;"
-                            class="form-item"></textarea>
-                        <br><br><br>
+        <p class="para">Have questions, feedback, or just want to say hello? Reach out — we're always happy to
+            connect.</p>
+        <br><br>
+
+        <div class="form">
+            <div class="form-body">
+                <form>
+                    <label style="margin-bottom: 15px;" class="name_lable">User Name</label><br>
+                    <input type="text" placeholder="Name" required class="form-item" maxlength="30" style="width: 100%;"><br><br>
+                    <label class="email_lable">E-mail</label><br><br>
+                    <input type="email" placeholder="name@gmail.com" required class="form_email" maxlength="30" style="width: 100%;">
+                    <br><br>
+                    <label style="margin-bottom: 15px;">Subject</label><br>
+                    <input type="text" placeholder="Subject" required class="form-item" style="width: 100%;">
+                    <br><br>
+                    <label style="margin-bottom: 15px;">Message</label><br>
+                    <textarea placeholder="Your Message" required rows="4" style="width: 100%;"
+                        class="form-item"></textarea>
+                    <br><br><br>
+                    <div class="last_btn">
                         <button type="submit" class="Send">Send Message</button>
                         <button type="reset" class="Reset" style="margin-left: 30%;">Reset</button>
-                    </form>
-                </div>
-            </section>
-
-            <br><br><br>
-
-
-
+                    </div>
+                </form>
+            </div>
         </div>
+
+        <br><br><br>
+
+
+
+
 
         <footer class="footer-full">
             <p style="font-size: 13px;">

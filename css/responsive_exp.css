@@ -1,0 +1,28 @@
+@media screen and (max-width: 480px) {
+
+    .bar {
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 38px;
+        font-weight: 600;
+    }
+    h2{
+        font-size: 28px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .subtitle{
+        margin-top: -5px;
+        font-size: 15px;
+    }
+    .para{
+        font-size: 12px;
+    }
+    .mai{
+        text-align: center;
+    }
+    
+}
