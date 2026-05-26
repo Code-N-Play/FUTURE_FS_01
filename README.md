@@ -5,6 +5,9 @@ Welcome to my personal protfolio website project
 This portfolio showcase my skills,projects, achivments, and web development journey with a morden and responsive design. 
 
 ## live Demo 
+```bash
+code-n-play.github.io/FUTURE_FS_01/index.html
+```
 
 ## Keyfeatures
 - Responsive Design
@@ -19,10 +22,10 @@ This portfolio showcase my skills,projects, achivments, and web development jour
 
 <div style="display: flex;flex-direction: column; grid-gap: 10px;">
      <div style="display: flex; grid-gap: 10px;">
-        <img src="Images/portfolio_web.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="Screenshot 2026-03-20 225415.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="Screenshot 2026-03-20 225439.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
-        <img src="Screenshot 2026-03-20 225934.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+        <img src="imges/portfolio_web.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+        <img src="imges/exp.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+        <img src="imges/edu.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
+        <img src="imges/pro.png" alt="screenshots" width="49%" style="border: 2px solid lightgreen"/>
     </div>
 </div>
   
@@ -35,34 +38,3 @@ This portfolio showcase my skills,projects, achivments, and web development jour
 - Bootstrap
 
 ---
-
-## How to Run the Project
-
-### Clone the Repo
-```bash
-git clone <Repo-link> cd your-project-folder
-```
-
-### Install Dependencies 
-```bash
-pip install flask google-generativeai pillow python-dotenv
-```
-
-
-### Edit Example.env File
-- Rename the file from **.eve.example ** to **.env**
-- Paste your API key in it
-
-```bash
-GEMINI_API_KEY=__YOUR_API_KEY_HERE__
-```
-
- ### Run the App 
-```bash
-python main.py
-```
-
- ### Open in browser
-
- ```bash
-http://127.0.0.1:5000/
